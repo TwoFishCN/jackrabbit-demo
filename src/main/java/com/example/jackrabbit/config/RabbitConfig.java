@@ -43,7 +43,7 @@ public class RabbitConfig {
         Properties properties = new Properties();
         properties.setProperty(RepositoryConfigurationParser.REPOSITORY_HOME_VARIABLE, jcrHome);
 
-        File file = ResourceUtils.getFile("classpath:repository.xml");
+        File file = ResourceUtils.getFile(configFilename);
 
         try (InputStream inputStream = new FileInputStream(file)) {
             return RepositoryConfig.create(new InputSource(inputStream), properties);
