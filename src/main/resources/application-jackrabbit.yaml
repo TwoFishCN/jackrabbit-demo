@@ -1,0 +1,4 @@
+jcr:
+  rep:
+    home: jackrabbit
+    config: classpath:rabbit-repository.xml
