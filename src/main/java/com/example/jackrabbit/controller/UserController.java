@@ -28,7 +28,7 @@ public class UserController {
 
 
     @GetMapping
-    public ResponseEntity list() {
-        return ResponseEntity.ok(userService.list());
+    public ResponseEntity list(@RequestParam String path) throws RepositoryException {
+        return ResponseEntity.ok(userService.list(path));
     }
 }
