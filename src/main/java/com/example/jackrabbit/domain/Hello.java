@@ -13,6 +13,9 @@ public class Hello {
     @Field(path = true)
     String path;
 
+    @Field(id = true)
+    Long id;
+
     @Field
     String title;
 
