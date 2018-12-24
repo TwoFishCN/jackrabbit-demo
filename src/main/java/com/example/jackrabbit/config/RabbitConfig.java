@@ -41,7 +41,8 @@ public class RabbitConfig {
         }
     }
 
-    private Repository jcrRepository() throws Exception {
+    @Bean
+    public Repository jcrRepository() throws Exception {
         RepositoryConfig config = create();
         return RepositoryImpl.create(config);
     }
